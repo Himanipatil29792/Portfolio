@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  font-size: 0.9rem !important;
 }
 
 a {
@@ -263,7 +264,7 @@ h6 {
 #hero p {
   color: #fff;
   margin-bottom: 50px;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -297,7 +298,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
@@ -338,7 +339,7 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 22px;
   color: #173b6c;
 }
 
@@ -372,7 +373,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -712,11 +713,17 @@ section {
 @media screen and (max-width: 650px) {
   .skills-container {
     grid-template-columns: 2fr;
-    padding: 2rem 50px;
+    padding: 1rem 50px;
   }
 }
 @media screen and (max-width: 576px) {
   .contact .info {
+    flex-direction: column;
+  }
+  .portfolio-card .col-md-4 {
+    margin-bottom: 1.5rem;
+  }
+  .company-heading {
     flex-direction: column;
   }
 }
@@ -736,4 +743,9 @@ section {
 .company-heading {
   border-bottom: 2px solid #1f5297;
   padding-bottom: 5px;
+}
+.linkheading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #050d18;
 }
